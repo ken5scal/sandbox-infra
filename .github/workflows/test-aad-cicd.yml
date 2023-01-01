@@ -1,12 +1,12 @@
 name: Run Azure Login with OpenID Connect
-on: [workflow_dispatch, push]
+on: [workflow_dispatch]
 
 permissions:
       id-token: write
       contents: read
       
 jobs: 
-  build-and-deploy:
+  test-aad:
     runs-on: ubuntu-latest
     steps:
     - name: 'Az CLI login'
