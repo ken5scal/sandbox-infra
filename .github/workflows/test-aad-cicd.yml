@@ -21,3 +21,11 @@ jobs:
           az account show
           az group list
           pwd
+    - name: 'Run Azure CLI commands'
+      continue-on-error: true
+      run: |
+          az ad user list
+    - name: 'Run Azure CLI commands'
+      continue-on-error: true
+      run: |
+          az ad group list
