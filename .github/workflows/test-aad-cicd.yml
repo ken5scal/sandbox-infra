@@ -21,11 +21,7 @@ jobs:
           az account show
           az group list
           pwd
-    - name: 'Run Azure User'
-      continue-on-error: true
+    - name: 'Run Azure AD commands'
       run: |
           az ad user list
-    - name: 'Run Azure Group'
-      continue-on-error: true
-      run: |
           az ad group list
