@@ -17,11 +17,11 @@ jobs:
 #           subscription-id: a362f12c-0f8b-4c68-8dc9-c51c6fde1a56
           allow-no-subscriptions: true
   
-    - name: 'Run Azure CLI commands'
-      run: |
-          az account show
-          az group list
-          pwd
+#     - name: 'Run Azure CLI commands'
+#       run: |
+#           az account show
+#           az group list
+#           pwd
     - name: 'Run Azure AD commands'
       run: |
           az ad user list
